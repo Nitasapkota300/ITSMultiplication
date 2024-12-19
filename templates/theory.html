@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theory - Whole Number Multiplication & Fractional Multiplication</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/theory.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Theory of Multiplication</h1>
+        <p>Learn about the concepts of Whole Number Multiplication and Fractional Multiplication. These are essential operations in mathematics that involve multiplying integers or fractions to determine their product.</p>
+
+        <div class="multiplication-container">
+            
+            <div class="multiplication-box left">
+                <h2>Whole Number Multiplication</h2>
+                <p><strong>Definition:</strong> Whole number multiplication is the process of finding the product of two or more integers. It represents repeated addition.</p>
+                <p><strong>Formula:</strong> <code>Product = Multiplicand × Multiplier</code></p>
+                <p><strong>Example:</strong> <code>4 × 5 = 20</code></p>
+                <p><strong>Visualization:</strong> If you have 4 groups of 5 apples each, the total is 4 × 5 = 20 apples.</p>
+            </div>
+            
+            <div class="multiplication-box right">
+                <h2>Fractional Multiplication</h2>
+                <p><strong>Definition:</strong> Fractional multiplication is the process of multiplying two fractions. It involves multiplying the numerators and denominators of the fractions separately.</p>
+                <p><strong>Formula:</strong> <code>Product = (Numerator₁ × Numerator₂) / (Denominator₁ × Denominator₂)</code></p>
+                <p><strong>Example:</strong> <code>(1/2) × (2/3) = (1 × 2) / (2 × 3) = 2/6 = 1/3</code></p>
+                <p><strong>Visualization:</strong> If you take half of a cake and then take two-thirds of that half, you end up with one-third of the original cake.</p>
+            </div>
+        </div>
+
+        <h3>Key Takeaways:</h3>
+        <ul>
+            <li><strong>Whole Number Multiplication:</strong> Combines integers to represent repeated addition.</li>
+            <li><strong>Fractional Multiplication:</strong> Combines parts of a whole to find the resulting fraction.</li>
+            <li>Both operations are essential for solving real-world mathematical problems.</li>
+        </ul>
+
+        <br>
+        <a href="{{ url_for('quiz') }}"><button>Practice Multiplication</button></a>
+        <a href="/multiply"></a><button>go to Multiply</button>
+    </div>
+</body>
+</html>

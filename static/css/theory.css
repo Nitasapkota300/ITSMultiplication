@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background for contrast */
+    color: #e0e0e0; /* Light text for readability */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for the content */
+.container {
+    background-color: #1f1f1f; /* Darker container background for depth */
+    padding: 40px;
+    border-radius: 12px; /* Slightly larger radius for a modern feel */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 36px;
+    color: #ff5722; /* Bright orange for emphasis */
+    margin-bottom: 20px;
+}
+
+/* Description text */
+p {
+    font-size: 18px;
+    color: #b0bec5; /* Cool gray for subtler text */
+    margin-bottom: 30px;
+    line-height: 1.6;
+    max-width: 800px;
+}
+
+/* Multiplication containers */
+.multiplication-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Individual multiplication boxes */
+.multiplication-box {
+    background-color: #2c2c2c;
+    padding: 25px;
+    border-radius: 10px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.multiplication-box:hover {
+    transform: scale(1.05); /* Slight hover effect */
+}
+
+/* Multiplication box titles */
+.multiplication-box h2 {
+    font-size: 28px;
+    color: #ffa726; /* Warm orange for section headers */
+    margin-bottom: 15px;
+}
+
+/* Code styling */
+code {
+    background-color: #444;
+    color: #ff5722; /* Bright orange for code */
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Key takeaways list */
+h3 {
+    color: #ff5722; /* Bright orange for emphasis */
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    max-width: 800px;
+}
+
+ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #b0bec5;
+}
+
+/* Button styles */
+button {
+    background-color: #2196f3; /* Vibrant blue */
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px; /* Slightly rounded corners */
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 220px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+    transform: translateY(-2px); /* Subtle lifting effect */
+}
+
+/* Links for the buttons */
+a {
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .multiplication-box {
+        width: 100%;
+    }
+
+    .multiplication-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul {
+        padding-left: 20px;
+        text-align: center;
+    }
+}

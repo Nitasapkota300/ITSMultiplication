@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/multi.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Calculator</h1>
+        <p>Choose the type of multiplication you want to perform:</p>
+
+        <div class="options-container">
+            <!-- Whole Number Multiplication Option -->
+            <div class="option-box">
+                <h2>Whole Number Multiplication</h2>
+                <p>Enter two whole numbers to calculate their product.</p>
+                <form method="post">
+                    <input type="number" name="num1" placeholder="Enter first number" required>
+                    <input type="number" name="num2" placeholder="Enter second number" required>
+                    <button type="submit">Calculate</button>
+                    <p>{{whole}}</p>
+                </form>
+            </div>
+
+            <!-- Fractional Multiplication Option -->
+            <div class="option-box">
+                <h2>Fractional Multiplication</h2>
+                <p>Enter two fractions to calculate their product.</p>
+                <form  method="post">
+                    <input type="text" name="numerator1" placeholder="Fraction 1" required>
+                    <span>×</span>
+                    <input type="text" name="numerator2" placeholder="Fraction 2" required>
+                    <button type="submit">Calculate</button>
+                    <p>{{fraction}}</p>
+                </form>
+            </div>
+        </div>
+        <div>
+            <a href="/theory"><button>Learn</button></a>
+            <a href="/quiz"><button>Quiz</button></a>
+        </div>
+    </div>
+</body>
+</html>
